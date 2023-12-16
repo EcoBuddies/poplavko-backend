@@ -1,5 +1,6 @@
 import json
 import xml.etree.ElementTree as ET
+from regions import regions, water_levels
 
 
 def parseXML(unparsed_xml_data):
@@ -24,6 +25,7 @@ def parseXML(unparsed_xml_data):
         postaja_data = {
             'sifra': sifra,
             'ime_kratko': ime_kratko,
+            'regija': water_levels[ime_kratko],
             'long': long,
             'lat': lat,
             'zadnja_sprememba': datum,
@@ -38,6 +40,7 @@ def parseXML(unparsed_xml_data):
 
         meritev_data = {
             'sifra': sifra,
+            'regija': water_levels[ime_kratko],
             'datum': datum,
             'pretok_znacilni': pretok_znacilni,
             'pretok': pretok,
