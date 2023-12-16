@@ -2,6 +2,7 @@ import requests
 from supabase import Client, create_client
 from utils import parseXML
 
+
 def fetch_and_insert_data():
     # Replace with the URL of your XML file
     response = requests.get('https://www.arso.gov.si/xml/vode/hidro_podatki_zadnji.xml')
