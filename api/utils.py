@@ -1,8 +1,8 @@
 import json
 import xml.etree.ElementTree as ET
 
-def parseXML(unparsed_xml_data):
 
+def parseXML(unparsed_xml_data):
     root = ET.fromstring(unparsed_xml_data)
 
     postaje = []
@@ -47,5 +47,5 @@ def parseXML(unparsed_xml_data):
             'visina_valov_znacilni': visina_valov_znacilni,
         }
         meritve.append(meritev_data)
-    
-    return [postaje,meritve]
+
+    return [postaje, meritve]
