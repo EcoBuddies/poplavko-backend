@@ -36,7 +36,7 @@ def fetch_and_insert_data():
 
 if __name__ == '__main__':
     # Do the following every minute
-    schedule.every(5).minutes.do(lambda: fetch_and_insert_data())
+    schedule.every(1).minutes.do(lambda: fetch_and_insert_data())
 
     while True:
         schedule.run_pending()
