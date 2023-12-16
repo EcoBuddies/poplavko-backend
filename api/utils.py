@@ -40,7 +40,6 @@ def parseXML(unparsed_xml_data):
 
         meritev_data = {
             'sifra': sifra,
-            'regija': water_levels[ime_kratko],
             'datum': datum,
             'pretok_znacilni': pretok_znacilni,
             'pretok': pretok,
